@@ -30,9 +30,9 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Resum</a></li>
+                        <li class="nav-item"><a href="#card" class="nav-link">Resum</a></li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="navbarDropdown"
+                            <a href="#portfolio" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="navbarDropdown"
                             aria-expanded="false">Portfolio</a>
                             
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,7 +62,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-7 order-1 order-md-0">
+                    <div class="col-md-7 order-1 order-md-0">
                         <img  src="./Images/church-7501379_1280.jpg"  class="img-fluid" alt="">
 
                     </div>
@@ -335,10 +335,217 @@
 
             </div>
         </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="text-center mb-5">Design & Video Portfolio</h2>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+
+                <!--분류 버튼-->
+                <div class="text-center mt-5">
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="all">전 체</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="video">영 상</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="figma">피그마</button>
+                </div>
+
+                <!--포트폴리오 아이템-->
+                <div class="row mt-5" id="portfolio-items">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design">
+                        <img src="./Images/sunrise-7719608_1280.jpg" alt="디자인 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                        <h4 class="text-center mt-2">Beauty of the Sunset</h4>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design">
+                        <img src="./Images/날라.jpg" alt="디자인 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                        <h4 class="text-center mt-2">The Lazy Lion</h4>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                        <img src="./Images/Staues of Athena.jpg" alt="피그마 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal1">
+                        <h4 class="text-center mt-2">Figma 1</h4>
+
+                    </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                        <img src="./Images/temple-of-hercules.jpg" alt="피그마 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-2">Figma 2</h4>
+
+                    </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                        <img src="./Images/Dumbell.jpg" alt="영상 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <h4 class="text-center mt-2">Video Project 1</h4>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                        <img src="./Images/sunflower-9568413_1280.jpg" alt="영상 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-2">Video Project 2</h4>
+
+                </div>
+            </div>
+
+            
+        </section>
         
         
 
     </main>
+
+    <section id="modal-section">
+        <div class="container">
+            <div class="modal fade" id="designModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">Beauty of the Sunset</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+
+                        <div class="modal-body"></div>
+                        <img src="./Images/sunrise-7719608_1280.jpg" class="img-fluid" alt="">
+                        <p>Beauty of the Sunset</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="modal fade" id="designModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">The LAzy Lion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+
+                        <div class="modal-body"></div>
+                        <img src="./Images/날라.jpg" class="img-fluid" alt="">
+                        <p>The lazy Lion</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">Beauty of the Sunset</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/tHAECWjkWuw?autoplay=1&mute=1&control=1&loop&1" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                            
+                        <p>Beauty of the Sunset</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">Beauty of the Sunset</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="./Images/Sunflower Field.mp4"
+                                allowfullscreen></iframe>
+                            </div>
+                        </div>
+                            
+                        <p>THe Sun Flowers</p>
+                        
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="modal fade" id="figmaModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">Beauty of the Sunset</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+
+                        <div class="modal-body"></div>
+                        <img src="./Images/temple-of-hercules.jpg" class="img-fluid" alt="">
+                        <p>Temple of Hercules</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="modal fade" id="figmaModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-hearder"> 
+                            <h5 class="modal-title">THe Great Athena</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="colse"></button>
+                            
+
+                        </div>
+
+                        <div class="modal-body"></div>
+                        <img src="./Images/Staues of Athena.jpg" class="img-fluid" alt="">
+                        <p>A Godess of wisdom and stretegy.</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+    
     <footer class="footer mt-auto py-3 bg-dark">
         <div class="container">
             <a style="text-decoration: none;" href="#"><span>Copyleft 2025 김민송</span></a>
