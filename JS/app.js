@@ -1,3 +1,6 @@
+
+AOS.init();
+
 document.addEventListener("DOMContentLoaded",function(){
 
     const progressBar = document.querySelectorAll(".progress-bar");
